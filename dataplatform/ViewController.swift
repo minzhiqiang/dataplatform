@@ -49,7 +49,6 @@ class ViewController: UIViewController,UIWebViewDelegate {
      *  检测url是否正确
      */
     func requestUrl(urlString: String) -> Bool {
-        var returnFlag = true;
         //链接校验
         let regEx = "^(http|https|ftp)\\://([a-zA-Z0-9\\.\\-]+(\\:[a-zA-"
             + "Z0-9\\.&%\\$\\-]+)*@)?((25[0-5]|2[0-4][0-9]|[0-1]{1}[0-9]{"
@@ -64,30 +63,16 @@ class ViewController: UIViewController,UIWebViewDelegate {
             let url: NSURL = NSURL(string: urlString)!
             let request: NSMutableURLRequest = NSMutableURLRequest(url: url as URL)
             request.timeoutInterval = 5
+            var response: URLResponse?
             do {
-                
-                let mySession = URLSession(configuration: URLSessionConfiguration.default)
-                var goin = true;
-                var requestCount = 0;
-                while goin {
-                    if(requestCount == 0) {
-                        let dataTask = mySession.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) in
-                            if let httpResponse = response as? HTTPURLResponse {
-                                if httpResponse.statusCode == 200 {
-                                    print("response:\(httpResponse.statusCode)")
-                                }
-                            } else {
-                                returnFlag = false;
-                            }
-                            goin = false;
-                        })
-                        dataTask.resume();
-                        requestCount = 1;
+                try NSURLConnection.sendSynchronousRequest(request as URLRequest, returning: &response)
+                if let httpResponse = response as? HTTPURLResponse {
+                    if httpResponse.statusCode == 200 {
+                        print("response:\(httpResponse.statusCode)")
+                        return true
                     }
-
                 }
-                return returnFlag;
-                
+                return false
             }
             catch (let error) {
                 print("error:\(error)")
