@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1E773A5C241E3C95DF1FAC5014F9870D37727485",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "e8a8af55-48c1-4925-b298-704e21858726++9760" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1E773A5C241E3C95DF1FAC5014F9870D37727485" : 9223372036854775807,
+    "e8a8af55-48c1-4925-b298-704e21858726++9760" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9B3B4A17-C3B4-4F9C-969D-9C8C611120E7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1E773A5C241E3C95DF1FAC5014F9870D37727485" : "dataplatform\/",
+    "e8a8af55-48c1-4925-b298-704e21858726++9760" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "dataplatform",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "dataplatform.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/10.255.208.35\/projects\/user_extract_tool\/trunk\/ios_project",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1E773A5C241E3C95DF1FAC5014F9870D37727485"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/10.255.208.35\/projects",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "e8a8af55-48c1-4925-b298-704e21858726++9760"
+    }
+  ]
+}
