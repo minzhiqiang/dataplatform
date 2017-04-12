@@ -34,6 +34,12 @@ class ViewController: UIViewController,UIWebViewDelegate {
     var path: String = ""
     var username: String = ""
     
+    //跳转到404页面
+    func to404Page() {
+        let jsPath = Bundle.main.path(forResource: "404",ofType:"html")
+        webView.loadRequest(URLRequest(url: URL(string:jsPath!)!))
+    }
+    
     //检查更新
     func checkUpdate() {
         PgyUpdateManager.sharedPgy().start(withAppId: "b7295b16c57d06a63f1cfcab923e0752");
@@ -109,8 +115,7 @@ class ViewController: UIViewController,UIWebViewDelegate {
         if(requestUrl(urlString: indexPath)) {
             webView.loadRequest(URLRequest(url: URL(string:indexPath)!))
         } else {
-            let jsPath = Bundle.main.path(forResource: "404",ofType:"html")
-            webView.loadRequest(URLRequest(url: URL(string:jsPath!)!))
+            to404Page();
         }
     }
     
@@ -121,6 +126,13 @@ class ViewController: UIViewController,UIWebViewDelegate {
         GeTuiSdk.bindAlias(username, andSequenceNum: GeTuiSdk.clientId())
     }
     
+    func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
+        var errorInfo = error.localizedDescription;
+        if(errorInfo == "The Internet connection appears to be offline.") {
+            to404Page();
+        }
+    }
+
     //连接改变时
     func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool{
         let title = webView.stringByEvaluatingJavaScript(from: "document.title");
@@ -153,6 +165,8 @@ class ViewController: UIViewController,UIWebViewDelegate {
         appdelegate.viewController = self;
         addWebView();
     }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -11,14 +11,8 @@
 		2826CD251E7ABE2C00DB1D07 /* PgyUpdate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2826CD241E7ABE2C00DB1D07 /* PgyUpdate.framework */; };
 		2826CD271E7ABE8700DB1D07 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2826CD261E7ABE8700DB1D07 /* AudioToolbox.framework */; };
 		282B49C71E44818000848073 /* app.js in Resources */ = {isa = PBXBuildFile; fileRef = 282B49C61E44818000848073 /* app.js */; };
-		283053FC1E7B7C380091DF4A /* 404.html in Resources */ = {isa = PBXBuildFile; fileRef = 283053FB1E7B7C380091DF4A /* 404.html */; };
-		283054061E7B7CCA0091DF4A /* 404_s-divider.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 283053FF1E7B7CCA0091DF4A /* 404_s-divider.jpg */; };
-		283054071E7B7CCA0091DF4A /* 404_search.png in Resources */ = {isa = PBXBuildFile; fileRef = 283054001E7B7CCA0091DF4A /* 404_search.png */; };
-		283054081E7B7CCA0091DF4A /* bg_noise.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 283054011E7B7CCA0091DF4A /* bg_noise.jpg */; };
-		283054091E7B7CCA0091DF4A /* main.css in Resources */ = {isa = PBXBuildFile; fileRef = 283054021E7B7CCA0091DF4A /* main.css */; };
-		2830540A1E7B7CCA0091DF4A /* main.css.bak in Resources */ = {isa = PBXBuildFile; fileRef = 283054031E7B7CCA0091DF4A /* main.css.bak */; };
-		2830540B1E7B7CCA0091DF4A /* texgyreschola-bold-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 283054041E7B7CCA0091DF4A /* texgyreschola-bold-webfont.ttf */; };
-		2830540C1E7B7CCA0091DF4A /* texgyreschola-regular-webfont.woff in Resources */ = {isa = PBXBuildFile; fileRef = 283054051E7B7CCA0091DF4A /* texgyreschola-regular-webfont.woff */; };
+		2890BE021E9E39CF009DBCCF /* 404.html in Resources */ = {isa = PBXBuildFile; fileRef = 2890BE001E9E39CF009DBCCF /* 404.html */; };
+		2890BE031E9E39CF009DBCCF /* 404.png in Resources */ = {isa = PBXBuildFile; fileRef = 2890BE011E9E39CF009DBCCF /* 404.png */; };
 		28D542441E2CBEF8008BB723 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D542431E2CBEF8008BB723 /* libc++.tbd */; };
 		28D542461E2CBF09008BB723 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D542451E2CBF09008BB723 /* libz.tbd */; };
 		28D542481E2CBF17008BB723 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D542471E2CBF17008BB723 /* libsqlite3.tbd */; };
@@ -78,15 +72,9 @@
 		2826CD261E7ABE8700DB1D07 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		2826CD291E7AC51300DB1D07 /* header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = header.h; sourceTree = "<group>"; };
 		282B49C61E44818000848073 /* app.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = app.js; sourceTree = "<group>"; };
-		283053FB1E7B7C380091DF4A /* 404.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 404.html; sourceTree = "<group>"; };
-		283053FF1E7B7CCA0091DF4A /* 404_s-divider.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "404_s-divider.jpg"; sourceTree = "<group>"; };
-		283054001E7B7CCA0091DF4A /* 404_search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 404_search.png; sourceTree = "<group>"; };
-		283054011E7B7CCA0091DF4A /* bg_noise.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg_noise.jpg; sourceTree = "<group>"; };
-		283054021E7B7CCA0091DF4A /* main.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = main.css; sourceTree = "<group>"; };
-		283054031E7B7CCA0091DF4A /* main.css.bak */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.css.bak; sourceTree = "<group>"; };
-		283054041E7B7CCA0091DF4A /* texgyreschola-bold-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "texgyreschola-bold-webfont.ttf"; sourceTree = "<group>"; };
-		283054051E7B7CCA0091DF4A /* texgyreschola-regular-webfont.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = "texgyreschola-regular-webfont.woff"; sourceTree = "<group>"; };
 		286731EE1E23AA2B000F3233 /* dataplatform.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = dataplatform.entitlements; sourceTree = "<group>"; };
+		2890BE001E9E39CF009DBCCF /* 404.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 404.html; sourceTree = "<group>"; };
+		2890BE011E9E39CF009DBCCF /* 404.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 404.png; sourceTree = "<group>"; };
 		28D542431E2CBEF8008BB723 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		28D542451E2CBF09008BB723 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		28D542471E2CBF17008BB723 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -160,20 +148,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		283053FE1E7B7CCA0091DF4A /* css */ = {
-			isa = PBXGroup;
-			children = (
-				283053FF1E7B7CCA0091DF4A /* 404_s-divider.jpg */,
-				283054001E7B7CCA0091DF4A /* 404_search.png */,
-				283054011E7B7CCA0091DF4A /* bg_noise.jpg */,
-				283054021E7B7CCA0091DF4A /* main.css */,
-				283054031E7B7CCA0091DF4A /* main.css.bak */,
-				283054041E7B7CCA0091DF4A /* texgyreschola-bold-webfont.ttf */,
-				283054051E7B7CCA0091DF4A /* texgyreschola-regular-webfont.woff */,
-			);
-			path = css;
-			sourceTree = "<group>";
-		};
 		28D542421E2CBEF8008BB723 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +172,8 @@
 		28D661DF1E16660900ACF16B = {
 			isa = PBXGroup;
 			children = (
+				2890BE001E9E39CF009DBCCF /* 404.html */,
+				2890BE011E9E39CF009DBCCF /* 404.png */,
 				28D661EA1E16660A00ACF16B /* dataplatform */,
 				28D661FF1E16660A00ACF16B /* dataplatformTests */,
 				28D6620A1E16660A00ACF16B /* dataplatformUITests */,
@@ -219,8 +195,6 @@
 		28D661EA1E16660A00ACF16B /* dataplatform */ = {
 			isa = PBXGroup;
 			children = (
-				283053FE1E7B7CCA0091DF4A /* css */,
-				283053FB1E7B7C380091DF4A /* 404.html */,
 				2826CD241E7ABE2C00DB1D07 /* PgyUpdate.framework */,
 				2826CD221E7ABE1F00DB1D07 /* PgySDK.framework */,
 				28ED51C61E2D05E70020D70A /* GtSdkLib */,
@@ -382,18 +356,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				283054061E7B7CCA0091DF4A /* 404_s-divider.jpg in Resources */,
-				283054081E7B7CCA0091DF4A /* bg_noise.jpg in Resources */,
-				2830540C1E7B7CCA0091DF4A /* texgyreschola-regular-webfont.woff in Resources */,
 				282B49C71E44818000848073 /* app.js in Resources */,
 				28ED51BB1E2D03AC0020D70A /* Info.plist in Resources */,
-				2830540B1E7B7CCA0091DF4A /* texgyreschola-bold-webfont.ttf in Resources */,
 				28D661F61E16660A00ACF16B /* LaunchScreen.storyboard in Resources */,
-				283053FC1E7B7C380091DF4A /* 404.html in Resources */,
-				2830540A1E7B7CCA0091DF4A /* main.css.bak in Resources */,
-				283054091E7B7CCA0091DF4A /* main.css in Resources */,
+				2890BE021E9E39CF009DBCCF /* 404.html in Resources */,
 				28D661F31E16660A00ACF16B /* Assets.xcassets in Resources */,
-				283054071E7B7CCA0091DF4A /* 404_search.png in Resources */,
+				2890BE031E9E39CF009DBCCF /* 404.png in Resources */,
 				28D661F11E16660A00ACF16B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
