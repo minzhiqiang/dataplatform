@@ -66,24 +66,7 @@ class ViewController: UIViewController,UIWebViewDelegate {
             + "[^/][a-zA-Z0-9\\.\\,\\?\\'\\\\/\\+&%\\$\\=~_\\-@]*)*$";
         let matcher = MyRegex(regEx)
         if matcher.match(input: urlString) {
-            let url: NSURL = NSURL(string: urlString)!
-            let request: NSMutableURLRequest = NSMutableURLRequest(url: url as URL)
-            request.timeoutInterval = 5
-            var response: URLResponse?
-            do {
-                try NSURLConnection.sendSynchronousRequest(request as URLRequest, returning: &response)
-                if let httpResponse = response as? HTTPURLResponse {
-                    if httpResponse.statusCode == 200 {
-                        print("response:\(httpResponse.statusCode)")
-                        return true
-                    }
-                }
-                return false
-            }
-            catch (let error) {
-                print("error:\(error)")
-                return false
-            }
+            return true
         } else{
             return false
         }
@@ -135,13 +118,10 @@ class ViewController: UIViewController,UIWebViewDelegate {
 
     //连接改变时
     func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool{
-        let title = webView.stringByEvaluatingJavaScript(from: "document.title");
-        username += webView.stringByEvaluatingJavaScript(from: "document.getElementById('username').value")! + "@";
-        if(title == "运营数据工具" || title == "当当数据平台-首页导航") {
-            var usernameArr = username.components(separatedBy: "@");
-            if(usernameArr[usernameArr.count - 3] != "") {
-                bindUsername(username: usernameArr[usernameArr.count - 3]);
-            }
+        //let title = webView.stringByEvaluatingJavaScript(from: "document.title");
+        username = webView.stringByEvaluatingJavaScript(from: "document.getElementById('username').value")!;
+        if(username != "") {
+            bindUsername(username: username);
         }
         return true;
     }

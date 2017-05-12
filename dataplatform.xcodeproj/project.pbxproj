@@ -569,8 +569,8 @@
 				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dangdang.dataplatform;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e74dc9a1-a896-49f9-9a46-b8d7fa347764";
-				PROVISIONING_PROFILE_SPECIFIER = "dev profile data platform";
+				PROVISIONING_PROFILE = "52247d8f-ffac-4b03-8639-a1e8c635540b";
+				PROVISIONING_PROFILE_SPECIFIER = devProfileDataplatform;
 				SWIFT_OBJC_BRIDGING_HEADER = dataplatform/header.h;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
