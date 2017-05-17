@@ -54,15 +54,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "dataplatform/AppDelegate.swift"
-            timestampString = "516275811.730192"
+            timestampString = "516708305.168347"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "174"
-            endingLineNumber = "174"
+            startingLineNumber = "172"
+            endingLineNumber = "172"
             landmarkName = "geTuiSdkDidReceivePayloadData(_:andTaskId:andMsgId:andOffLine:fromGtAppId:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "dataplatform/AppDelegate.swift"
-            timestampString = "516275822.45439"
+            timestampString = "516708305.168347"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
             landmarkName = "geTuiSdkDidReceivePayloadData(_:andTaskId:andMsgId:andOffLine:fromGtAppId:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "dataplatform/AppDelegate.swift"
-            timestampString = "516275906.142132"
+            timestampString = "516708305.168347"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
             landmarkName = "geTuiSdkDidReceivePayloadData(_:andTaskId:andMsgId:andOffLine:fromGtAppId:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -128,6 +128,38 @@
             startingLineNumber = "127"
             endingLineNumber = "127"
             landmarkName = "webView(_:shouldStartLoadWith:navigationType:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dataplatform/AppDelegate.swift"
+            timestampString = "516708305.168347"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
+            landmarkName = "geTuiSdkDidReceivePayloadData(_:andTaskId:andMsgId:andOffLine:fromGtAppId:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dataplatform/AppDelegate.swift"
+            timestampString = "516708305.168347"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
+            landmarkName = "geTuiSdkDidReceivePayloadData(_:andTaskId:andMsgId:andOffLine:fromGtAppId:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

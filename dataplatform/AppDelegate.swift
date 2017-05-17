@@ -33,8 +33,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GeTuiSdkDelegate, UNUserN
         GeTuiSdk.start(withAppId: kGtAppId, appKey: kGtAppKey, appSecret: kGtAppSecret, delegate: self);
         // 注册APNs - custom method - 开发者自定义的方法
         self.registerRemoteNotification();
-        GeTuiSdk.resetBadge()
-        UIApplication.shared.applicationIconBadgeNumber = 0;
         //增加判断用户是否第一次开启应用
         if UserDefaults.standard.bool(forKey: "everLaunched") == false {
             UserDefaults.standard.set(true, forKey: "everLaunched")
@@ -179,7 +177,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GeTuiSdkDelegate, UNUserN
                 }
             } else {//app在前台
                 if(toUrl != nil && title != nil && body != nil) {
-                    registerNotification(alerTime: 5, toUrl: toUrl as! String, title: title as! String, body: body as! String)
+                    registerNotification(alerTime: 1, toUrl: toUrl as! String, title: title as! String, body: body as! String)
                 }
                 
             }
@@ -189,29 +187,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GeTuiSdkDelegate, UNUserN
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
-        print("applicationWillResignActive")
+        print("applicationWillResignActive");
+        GeTuiSdk.resetBadge()
+        UIApplication.shared.applicationIconBadgeNumber = 0;
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-        print("applicationDidEnterBackground")
+        print("applicationDidEnterBackground");
+        GeTuiSdk.resetBadge()
+        UIApplication.shared.applicationIconBadgeNumber = 0;
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-        print("applicationWillEnterForeground")
+        print("applicationWillEnterForeground");
+        GeTuiSdk.resetBadge()
+        UIApplication.shared.applicationIconBadgeNumber = 0;
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        GeTuiSdk.resetBadge()
+        UIApplication.shared.applicationIconBadgeNumber = 0;
         print("applicationDidBecomeActive")
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-        print("applicationWillTerminate")
-        
+        print("applicationWillTerminate");
+        GeTuiSdk.resetBadge()
+        UIApplication.shared.applicationIconBadgeNumber = 0;
     }
 
 
